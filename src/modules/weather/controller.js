@@ -19,7 +19,7 @@ export async function getWeather(req, res, next) {
     res.status(200).json({
       client_ip: `${req.ip}`,
       location: weather.location.country,
-      greeting: `Hello ${params.visitor_name}!, the temperature is ${weather.current.temp_c}  degrees Celcius in ${weather.location.country} `,
+      greeting: `Hello ${params.visitor_name}!, the temperature is ${weather.current.temp_c} degrees Celcius in ${weather.location.country} `,
     });
   } catch (err) {
     next(err);
