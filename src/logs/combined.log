@@ -264,3 +264,10 @@
 {"level":"error","message":"Request failed with status code 400"}
 {"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'location')\n    at getWeather (file:///home/emmanuel/kitchen/backend-projects/weather-api/src/modules/weather/controller.js:21:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
 {"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Server is running on port 3000"}
+{"level":"info","message":"Server is running on port 3000"}
