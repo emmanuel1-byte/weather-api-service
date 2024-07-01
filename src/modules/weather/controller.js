@@ -16,10 +16,11 @@ export async function getWeather(req, res, next) {
   try {
     const params = await paramSchema.validateAsync(req.query);
     const weather = await WeatherApi.fetchtWeatherCondition(req.ip);
+    console.log(weather)
     res.status(200).json({
       client_ip: `${req.ip}`,
-      location: weather.location.country,
-      greeting: `Hello ${params.visitor_name}!, the temperature is ${weather.current.temp_c} degrees Celcius in ${weather.location.country} `,
+      location: weather.location.region,
+      greeting: `Hello ${params.visitor_name}!, the temperature is ${weather.current.temp_c} degrees Celcius in ${weather.location.region}`,
     });
   } catch (err) {
     next(err);
